@@ -28,8 +28,8 @@ x_train = np.reshape(x_train, (len(x_train), 28, 28, 1))
 x_test = np.reshape(x_test, (len(x_test), 28, 28, 1))
 
 model.fit(x_train, x_train,
-                epochs=1,
-                batch_size=1,
+                epochs=10,
+                batch_size=100,
                 shuffle=True,
                 validation_data=(x_test, x_test))
 
